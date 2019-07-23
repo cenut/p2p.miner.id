@@ -26,8 +26,8 @@ try:
         version=version,
         description='Peer-to-peer Bitcoin mining pool',
         author='Forrest Voight',
-        author_email='forrest@forre.st',
-        url='http://p2pool.forre.st/',
+        author_email='support@miner.id',
+        url='http://p2p.miner.id/',
         data_files=[
             ('', ['README.md']),
             ("Microsoft.VC90.MFC", mfcfiles),
