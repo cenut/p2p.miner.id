@@ -71,7 +71,7 @@ ${PKG_ROOT}/.stamp-h: conf/requirements*.pip ${CACHE_ROOT}/virtualenv/virtualenv
 	# this project in ``${PKG_ROOT}``.
 	tar \
 	  -C "${CACHE_ROOT}"/virtualenv --gzip \
-	  -xf "${CACHE_ROOT}"/virtualenv/virtualenv-1.10.1.tar.gz
+	  -zxvf "${CACHE_ROOT}"/virtualenv/virtualenv-1.10.1.tar.gz
 	python "${CACHE_ROOT}"/virtualenv/virtualenv-1.10.1/virtualenv.py \
 	  --clear \
 	  --distribute \
