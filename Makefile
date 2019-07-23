@@ -47,7 +47,7 @@ dist:
 
 ${CACHE_ROOT}/virtualenv/virtualenv-1.10.1.tar.gz:
 	mkdir -p ${CACHE_ROOT}/virtualenv
-	sh -c "cd ${CACHE_ROOT}/virtualenv && curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.10.1.tar.gz"
+	sh -c "cd ${CACHE_ROOT}/virtualenv && wget https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.10.1.tar.gz"
 
 ${PKG_ROOT}/.stamp-h: conf/requirements*.pip ${CACHE_ROOT}/virtualenv/virtualenv-1.10.1.tar.gz
 	# Because build and run-time dependencies are not thoroughly tracked,
